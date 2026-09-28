@@ -1,0 +1,13 @@
+{
+  "site": "Labokem Laboratories Private Limited",
+  "version": "3.0-ethical-revised-stock",
+  "divisions": ["ethical", "generic", "otc"],
+  "liveDivision": "ethical+generic",
+  "currency": "INR",
+  "dataSource": "assets/js/data.js",
+  "schema": "database/schema.sql",
+  "routes": ["/", "/divisions", "/divisions/ethical", "/divisions/generic", "/products", "/product/:slug", "/team", "/team/:id", "/org-chart", "/areas", "/parties", "/orders", "/database", "/admin"],
+  "genericHead": "manish-verma",
+  "productCounts": { "ethical": 13, "generic": 23, "total": 36 },
+  "rules": ["Never invent salt/composition/uses", "Missing => Details to be updated", "Generic stock fields exact from register", "Ethical revised stock exact v3 (p05 rate 70.14->70.71)", "Generic owner = Manish Verma RBM alag", "Uses replaces Advantages label"]
+}
