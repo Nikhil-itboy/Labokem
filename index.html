@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Labokem Laboratories Private Limited — Pharma Business Platform</title>
+  <meta name="description" content="Labokem Laboratories Private Limited — Ethical (13, RBM Gaurav alag), Generic (23, RBM Manish alag), OTC divisions, team hierarchy, areas, parties and order-mapping structure.">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="Labokem Laboratories logo" loading="lazy" onerror="this.onerror=null;this.src='labokem-white-logo (1).png'">
+        <div>
+          <div class="brand-name">LABOKEM<br>LABORATORIES PVT. LTD.</div>
+          <div class="brand-sub">Pharma Business Platform</div>
+        </div>
+      </div>
+
+      <div class="nav-label">Overview</div>
+      <nav class="nav" aria-label="Overview">
+        <a href="#/" data-route="dashboard"><span class="ico">◈</span> Dashboard</a>
+        <a href="#/divisions" data-route="divisions"><span class="ico">◫</span> Divisions</a>
+        <a href="#/org-chart" data-route="org-chart"><span class="ico">⑂</span> Org Chart</a>
+      </nav>
+
+      <div class="nav-label">Ethical Division</div>
+      <nav class="nav" aria-label="Ethical">
+        <a href="#/products" data-route="products"><span class="ico">⬣</span> Products · 36</a>
+        <a href="#/team" data-route="team"><span class="ico">◐</span> Team &amp; BMs</a>
+        <a href="#/areas" data-route="areas"><span class="ico">⬢</span> Areas · 2</a>
+        <a href="#/parties" data-route="parties"><span class="ico">⬔</span> Parties · 4</a>
+      </nav>
+
+      <div class="nav-label">Generic Division · RBM Manish (alag)</div>
+      <nav class="nav" aria-label="Generic">
+        <a href="#/divisions/generic" data-route="divisions"><span class="ico">⬣</span> Generic · 23 Products</a>
+        <a href="#/team/manish-verma" data-route="team"><span class="ico">◐</span> Manish Verma (RBM Generic)</a>
+      </nav>
+
+      <div class="nav-label">Business</div>
+      <nav class="nav" aria-label="Business">
+        <a href="#/orders" data-route="orders"><span class="ico">▤</span> Orders &amp; Visits</a>
+        <a href="#/database" data-route="database"><span class="ico">▦</span> Database</a>
+        <a href="#/admin" data-route="admin"><span class="ico">⚙</span> Admin Plan</a>
+      </nav>
+
+      <div class="sidebar-foot">
+        Ethical (13) + Generic (23) live · OTC ready<br>
+        RBM Ethical: Gaurav (alag)<br>
+        RBM Generic: Manish (alag)<br>
+        Product → BM → Party → Area
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+
+    <!-- Main -->
+    <div class="main">
+      <header class="topbar">
+        <button class="hamburger" id="menuBtn" aria-label="Open navigation">☰</button>
+        <div class="crumbs" aria-hidden="true"><strong>Labokem Laboratories</strong> · Pharmaceuticals / CFA</div>
+        <div class="topbar-search">
+          <label for="globalSearch" class="sr-only" style="position:absolute;left:-9999px">Search products</label>
+          <input id="globalSearch" type="search" placeholder="Search products…" autocomplete="off" aria-label="Search products">
+        </div>
+      </header>
+
+      <main class="content" id="mainContent">
+        <div id="view" aria-live="polite"></div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Quick-view modal -->
+  <div class="modal-back" id="modalBack" role="dialog" aria-modal="true" aria-label="Quick view">
+    <div class="modal" id="modalBox"></div>
+  </div>
+
+  <noscript><div style="padding:24px;font-family:sans-serif">This Labokem business platform needs JavaScript to render divisions, products, team and mapping.</div></noscript>
+
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/components.js" defer></script>
+  <script src="assets/js/views.js" defer></script>
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>
